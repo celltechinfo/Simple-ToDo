@@ -28,7 +28,7 @@ import java.util.ArrayList;
             setContentView(R.layout.activity_main);
 
             lvItems = (ListView) findViewById(R.id.lvItems);
-
+// coment test
             readItems();
             itemsAdapter = new ArrayAdapter<String>(this,
                     android.R.layout.simple_list_item_1, items);
