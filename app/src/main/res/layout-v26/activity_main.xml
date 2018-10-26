@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ACF3EA"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#B5E4E6"
+        android:divider="#B461C8"
+        android:dividerHeight="5dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnAddItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnAddItem"
+        android:layout_toLeftOf="@+id/btnAddItem"
+        android:hint="Add a new item..."
+        android:importantForAutofill="no"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#B461C8"
+        android:onClick="onAddItem"
+        android:text="Add Item"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
